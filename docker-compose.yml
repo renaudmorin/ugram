@@ -1,0 +1,33 @@
+version: '3'
+services:
+  frontend:
+    container_name: react-frontend
+    restart: always
+    build: ./ugram-frontend
+    ports:
+      - '3000:3000'
+    external_links:
+      - backend
+
+  mongodb:
+    container_name: mongoDb
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  mongo-seed:
+    build: ./mongoDbInit
+    links:
+      - mongodb
+
+  backend:
+    container_name: nest-js-backend
+    restart: always
+    build: ./ugram-backend
+    ports:
+      - '4000:4000'
+    external_links:
+      - mongodb
+    depends_on:
+      - mongodb
+      - mongo-seed

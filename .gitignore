@@ -1,0 +1,11 @@
+#Les .idea de Jetbrains
+.idea
+
+# Optional eslint cache
+**/.eslintcache
+
+#System files
+.DS_Store
+
+#Ignore node_module folder
+node_modules/

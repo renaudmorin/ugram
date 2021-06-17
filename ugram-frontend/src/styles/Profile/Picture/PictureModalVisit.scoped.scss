@@ -1,0 +1,30 @@
+div.subsection-label {
+  font-size: small;
+  font-weight: bold;
+}
+
+.picture-menu {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picture-item {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picture-label {
+  display: inline;
+  font-weight: normal;
+}
+
+.picture-desciption {
+  margin: 0;
+  font-size: small;
+}

@@ -1,0 +1,69 @@
+[{
+  "_id": {
+    "$oid": "601b11dbc375cd20f4425196"
+  },
+  "hashtags": [
+    "Hashtage1",
+    "Hashtag2"
+  ],
+  "mentions": [
+    "Mention1",
+    "Mention2"
+  ],
+  "pictureUrl": "https://cdn.discordapp.com/attachments/354284628074299394/806189219101540352/4wdd13.png",
+  "userId": "601aede76f17da0290f7cf97",
+  "description": "This picture is insane!",
+  "creationDate": {
+    "$date": "2021-02-05T05:00:00Z"
+  },
+  "likes": [],
+  "comments": [
+    {
+      "username": "wengren11",
+      "comment": "That's a beautiful comment"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601b133b156eb737f82d6933"
+  },
+  "hashtags": [
+    "Swag",
+    "DevLife"
+  ],
+  "mentions": [
+    "RenaudMorin",
+    "Khaled",
+    "Jean-Simon"
+  ],
+  "pictureUrl": "https://www.hawtcelebs.com/wp-content/uploads/2011/12/Sofia-Vergara-at-New-Years-Eve-Premiere-in-Los-Amgeles-4.jpg",
+  "userId": "601aee006f17da0290f7cf98",
+  "description": "Future dev Frontend",
+  "creationDate": {
+    "$date": "2021-01-02T05:00:00Z"
+  },
+  "likes": [],
+  "comments": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "601b133b156eb737f82d6946"
+  },
+  "hashtags": [
+    "Beach"
+  ],
+  "mentions": [
+    "MeganFox"
+  ],
+  "pictureUrl": "https://static.onecms.io/wp-content/uploads/sites/20/2018/08/beach.jpg",
+  "userId": "601aee006f17da0290f7cf98",
+  "description": "Thats an amazing test",
+  "creationDate": {
+    "$date": "2021-02-10T05:00:00Z"
+  },
+  "likes": ["wengren11"],
+  "comments": [],
+  "__v": 0
+}]

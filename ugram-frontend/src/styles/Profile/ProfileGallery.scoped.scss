@@ -1,0 +1,38 @@
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid gray;
+
+  div.image-container {
+    position: relative;
+    img.item {
+      height: 293px;
+      width: 293px;
+      padding: 16px;
+    }
+    img.item:hover ~ .deleteOverlay {
+      opacity: 1;
+    }
+    div.deleteOverlay {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    div.deleteOverlay:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 759px) {
+  div.gallery {
+    div.image-container {
+      div.deleteOverlay {
+        opacity: 1;
+      }
+    }
+  }
+}

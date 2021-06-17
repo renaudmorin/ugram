@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "601aede76f17da0290f7cf97"
+  },
+  "profilePictureUrl": "https://cdn.discordapp.com/attachments/354284628074299394/806189219101540352/4wdd13.png",
+  "username": "TheDevil",
+  "name": "Lucy Fur",
+  "email": "WeAreLegion@hotmail.com",
+  "phoneNumber": "1116666666",
+  "registrationDate": {
+    "$date": "2000-01-01T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601aee006f17da0290f7cf98"
+  },
+  "profilePictureUrl": "https://media.allure.com/photos/5ba26c76135b333b10dff06d/4:3/w_2191,h_1643,c_limit/sofia-vergara-plastic-surgery-rumors.jpg",
+  "username": "Sophia.V",
+  "name": "Sophia Vergara",
+  "email": "JhonDoe@hotmail.com",
+  "phoneNumber": "1 800 Qualinet",
+  "registrationDate": {
+    "$date": "2021-02-04T05:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601aee0d6f17da0290f7cf99"
+  },
+  "profilePictureUrl": "https://pyxis.nymag.com/v1/imgs/ac5/3b7/88330ab910c3e1f0e7479378eb2c1f316e-megan-fox.rvertical.w1200.jpg",
+  "username": "MeganFoxx19",
+  "name": "Megan Fox",
+  "email": "JaneDoe@hotmail.com",
+  "phoneNumber": "1 800 this works",
+  "registrationDate": {
+    "$date": "2021-02-03T05:00:00Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,663 @@
+{
+	"info": {
+		"_postman_id": "038a3250-31cb-4183-a4f9-5ed0344e7d48",
+		"name": "Ugram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"profilePictureUrl\": \"https://cdn.discordapp.com/attachments/354284628074299394/806189219101540352/4wdd13.png\",\r\n    \"username\" : \"XXQcKillaSwagXX\",\r\n    \"name\" : \"Jane Doe\",\r\n    \"email\" : \"JaneDoe@hotmail.com\",\r\n    \"phoneNumber\" : \"16666666666\",\r\n    \"registrationDate\" : \"2000-01-01T05:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601aee006f17da0290f7cf98"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/users?search=",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"profilePictureUrl\": \"www.changed.com\",\r\n    \"username\" : \"MisterTestChanged\",\r\n    \"name\" : \"Jane Doe Changed\",\r\n    \"email\" : \"JaneDoeChanged@hotmail.com\",\r\n    \"registrationDate\" : \"2021-01-01T05:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601aee006f17da0290f7cf98"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSingleUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601aee006f17da0290f7cf98"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsersByUserName",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/users/MisterTestChanged",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"MisterTestChanged"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pictures",
+			"item": [
+				{
+					"name": "Create Picture",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pictureUrl\": \"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/65565057_10158058839464453_8157468137327951872_n.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_ohc=zxTiVwxv38YAX-AdXLy&_nc_ht=scontent-lga3-1.xx&oh=fad525f7eb8e8f22f73d832b0e532fe1&oe=603F6F8D\",\r\n    \"userId\" : \"60465f8f28d3f126302cb475\",\r\n    \"description\" : \"Future dev Frontend\",\r\n    \"hashtags\" : [\"Swag\",\"DevLife\"],\r\n    \"mentions\" : [\"RenaudMorin\",\"Khaled\",\"Jean-Simon\"],\r\n    \"creationDate\" : \"2021-01-01T05:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPictures",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/pictures/?desc=&tag=",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"pictures",
+								""
+							],
+							"query": [
+								{
+									"key": "desc",
+									"value": ""
+								},
+								{
+									"key": "tag",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMatchingDescriptions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/pictures/matchingdescriptions?desc=&limit",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"pictures",
+								"matchingdescriptions"
+							],
+							"query": [
+								{
+									"key": "desc",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMatchingHashtags",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/pictures/matchinghashtags?hashtag=&limit",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"pictures",
+								"matchinghashtags"
+							],
+							"query": [
+								{
+									"key": "hashtag",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHashtags",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/pictures/hashtags/:limit",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"pictures",
+								"hashtags",
+								":limit"
+							],
+							"variable": [
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSinglePicutre",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601b133b156eb737f82d6933"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePicture",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"pictureUrl\": \"updated\",\r\n\"description\" : \"Future dev Frontend\",\r\n\"hashtags\" : [\"Swag\",\"DevLife\"],\r\n\"mentions\" : [\"RenaudMorin\",\"Khaled\",\"Jean-Simon\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601b11dbc375cd20f4425196"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSinglePicture",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601b133b156eb737f82d6933"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteReaction",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"MisterTestChanged\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture/:id/reaction",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture",
+								":id",
+								"reaction"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601b133b156eb737f82d6933"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addReaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"MisterTestChanged\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture/:id/reaction",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture",
+								":id",
+								"reaction"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601b133b156eb737f82d6933"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"MisterTestChanged\",\r\n    \"comment\": \"This is a comment !\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/picture/:id/comment",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"picture",
+								":id",
+								"comment"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "601b133b156eb737f82d6933"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPicutresByUserID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/pictures/:userid?desc&tag=",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"pictures",
+								":userid"
+							],
+							"query": [
+								{
+									"key": "desc",
+									"value": null
+								},
+								{
+									"key": "tag",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "userid",
+									"value": "601aede76f17da0290f7cf97"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

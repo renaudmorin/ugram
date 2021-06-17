@@ -1,0 +1,58 @@
+.top-hashtags-container {
+  @import 'node_modules/semantic-ui-css/semantic.min';
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 2rem auto 2rem;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 10px !important;
+
+  .ui.circular.label {
+    min-width: 1rem;
+    min-height: 1rem;
+  }
+
+  .top-hashtags-header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 5px 0 !important;
+  }
+
+  .top-hashtags {
+    display: flex;
+    cursor: grab;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .top-hashtags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hashtag {
+    display: flex;
+  }
+
+  .hashtag-rank {
+    margin: 1px 3px 1px 0 !important;
+  }
+
+  .hashtag-tooltip-text {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .top-hashtags-container {
+    height: 95%;
+    width: 95%;
+    margin-bottom: 5rem;
+  }
+}

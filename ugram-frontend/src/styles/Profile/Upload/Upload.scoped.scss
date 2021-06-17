@@ -1,0 +1,91 @@
+div.uploadContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+
+  div.fileContainer {
+    button.chooseFileButton {
+      background: rgb(44, 56, 64);
+    }
+  }
+
+  .demo-image-preview > img {
+    width: 100%;
+  }
+
+  .react-html5-camera-photo > img,
+  .react-html5-camera-photo > video {
+    width: 100%;
+  }
+
+  div.imageUploader {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  div.inputContainer {
+    width: 100%;
+    max-width: 500px;
+
+    div.input-title {
+      margin-bottom: 10px;
+    }
+
+    div.input-hashtag {
+      margin-bottom: 50px;
+    }
+
+    div.input-mentions {
+      margin-bottom: 50px;
+    }
+
+    div.input-description {
+      margin-bottom: 50px;
+    }
+  }
+  button.postButton {
+    max-width: 200px;
+    padding: 16px 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    background: rgb(44, 56, 64);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .mention-select {
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  div.MuiDialog-paper {
+    margin: 0;
+    width: 90%;
+  }
+  div.uploadContainer {
+    min-width: 1rem;
+
+    div.inputContainer {
+      div.input-title {
+        margin-bottom: 10px;
+      }
+
+      div.input-hashtag {
+        margin-bottom: 50px;
+      }
+
+      div.input-mentions {
+        margin-bottom: 50px;
+      }
+
+      div.input-description {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

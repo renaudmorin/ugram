@@ -1,0 +1,47 @@
+div.suggestion {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+div.profile_container {
+  display: flex;
+  float: left;
+
+  span.profile_picture {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+div.profile_text {
+  text-align: justify;
+
+  div.profile_username {
+    font-weight: 600;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+    div.profile_name {
+      color: #8e8e8e;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
